@@ -1,12 +1,14 @@
 <template>
-  <h1>Hello, {{ title }} !</h1>
+  <div>
+    <input type="number" v-model.number="numberModel" />
+  </div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      title: "World",
+      numberModel: 3,
     };
   },
 };
